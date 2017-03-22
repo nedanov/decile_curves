@@ -51,12 +51,12 @@ def decile_plot(arr_y_test,arr_y_pred,figsize=None, bar_width=0.8,legend='on'):
 	            xmax=100, 
 	            hold=None, 
 	            color='black')
-	plt.title('Average Decile Predicted Probability vs Actual Response Rate',
+	plt.title('Average Decile Predicted Probability vs Actual Target Rate',
 	          fontsize=20) 
 	plt.xlabel('Probability Score Decile',
 	           fontsize=15)
-	plt.ylabel('Predicted Probability / Actual Response Rate',
+	plt.ylabel('Predicted Probability / Actual Target Rate',
 	           fontsize=15)
 	if legend=='on':
-		plt.legend(['Baseline (Avg.) Response Rate','Actual Response Rate','Predicted Probability'],
+		plt.legend(['Baseline (Avg.) Response Rate','Actual Target Rate','Predicted Probability'],
 		           fontsize=12)
